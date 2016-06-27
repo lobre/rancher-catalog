@@ -4,7 +4,6 @@
   description: |
     Traefik reverse proxy.
   minimum_rancher_version: v0.59.0
-  uuid: traefik-0
   questions:
     - variable: "domain"
       description: "Default domain."
@@ -21,6 +20,6 @@
 
 traefik:
   labels:
-    - traefik.frontend.rule: "Host:${host}"
-    - traefik.port: 8080
-    - traefik.enable: true
+    - traefik.frontend.rule=Host:${host}
+    - traefik.port=8080
+    - traefik.enable=true
