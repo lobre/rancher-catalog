@@ -22,3 +22,6 @@ traefik:
     - "traefik.frontend.rule=Host:${host}"
     - "traefik.port=8080"
     - "traefik.enable=true"
+
+  labels:
+    traefik.coucou: 'true'
