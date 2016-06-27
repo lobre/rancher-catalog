@@ -4,6 +4,7 @@ traefik:
   command: "--web --docker --docker.domain=${domain} --acme --acme.email=${email} --acme.storagefile=/acme.json --acme.ondemand=true --acme.entrypoint=https"
   ports:
     - "80:80"
+    - "443:443"
   volumes:
     - "/var/run/docker.sock:/var/run/docker.sock"
     - "/dev/null:/traefik.toml"
