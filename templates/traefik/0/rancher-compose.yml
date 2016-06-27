@@ -1,7 +1,7 @@
 .catalog:
-  name: Traefik
-  version: v1
-  description: Traefik reverse proxy.
+  name: "Traefik"
+  version: "v1"
+  description: "Traefik reverse proxy."
   questions:
     - variable: "domain"
       description: "Default domain."
@@ -15,3 +15,6 @@
       required: false
       default: "" 
       type: "string"
+
+traefik:
+  scale: 2
