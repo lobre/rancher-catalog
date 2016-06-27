@@ -2,4 +2,3 @@ name: # Name of the Catalog Entry
 description: |
   # Description of the Catalog Entry
 category: # Category to be used for searching catalog entries
-license: # The license 
