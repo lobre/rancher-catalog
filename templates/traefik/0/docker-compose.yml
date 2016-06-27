@@ -1,2 +1,10 @@
 traefik:
   image: traefik
+  container_name: traefik
+  command: "--web --docker --docker.domain=${domain}"
+  ports:
+    - "80:80"
+    - "8082:8080"
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - /dev/null:/traefik.toml
