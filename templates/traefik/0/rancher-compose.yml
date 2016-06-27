@@ -1,0 +1,25 @@
+.catalog:
+  name: Traefik
+  version: v1
+  description: |
+    Traefik reverse proxy.
+  minimum_rancher_version: v0.59.0
+  questions:
+    - variable: "domain"
+      description: "Default domain."
+      label: "Domain:"
+      required: true
+      default: ""
+      type: "string"
+    - variable: "host"
+      description: "Host URL."
+      label: "Host:"
+      required: true
+      default: "" 
+      type: "string"
+
+traefik:
+  labels:
+    - traefik.frontend.rule: "Host:${host}"
+    - traefik.port: 8080
+    - traefik.enable: true
