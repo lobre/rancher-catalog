@@ -1,2 +1,20 @@
+.catalog:
+  name: Traefik
+  version: v1
+  description: Traefik reverse proxy.
+  questions:
+    - variable: "domain"
+      description: "Default domain."
+      label: "Domain:"
+      required: false
+      default: ""
+      type: "string"
+    - variable: "host"
+      description: "Host URL."
+      label: "Host:"
+      required: false
+      default: "" 
+      type: "string"
+
 traefik:
   scale: 2

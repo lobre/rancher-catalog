@@ -1,3 +1,4 @@
 name: Proxy
 description: Reverse proxy to manage domain name
 category: Defaults
+version: v1
