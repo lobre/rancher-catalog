@@ -15,6 +15,3 @@
       required: false
       default: "" 
       type: "string"
-
-traefik:
-  scale: 1
