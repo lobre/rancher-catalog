@@ -19,6 +19,4 @@
 
 traefik:
   labels:
-    - "traefik.frontend.rule=Host:${host}"
-    - "traefik.port=8080"
-    - "traefik.enable=true"
+    traefik.coucou: 'true'

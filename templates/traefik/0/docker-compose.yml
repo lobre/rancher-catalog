@@ -8,5 +8,3 @@ traefik:
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     - /dev/null:/traefik.toml
-  labels:
-    traefik.coucou: 'true'
