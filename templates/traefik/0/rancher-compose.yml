@@ -1,22 +1,3 @@
-.catalog:
-  name: Traefik
-  version: v1
-  description: |
-    Traefik reverse proxy.
-  questions:
-    - variable: "domain"
-      description: "Default domain."
-      label: "Domain:"
-      required: true
-      default: ""
-      type: "string"
-    - variable: "host"
-      description: "Host URL."
-      label: "Host:"
-      required: true
-      default: "" 
-      type: "string"
-
 traefik:
   ports:
     - "4000:4000"
