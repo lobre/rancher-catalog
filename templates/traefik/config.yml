@@ -1,4 +1,3 @@
 name: Proxy
-description: |
-  Reverse proxy to manage domain name
-category: System
+description: Reverse proxy to manage domain name
+category: Defaults
