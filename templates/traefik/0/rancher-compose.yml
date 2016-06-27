@@ -4,6 +4,7 @@
   description: |
     Traefik reverse proxy.
   minimum_rancher_version: v0.59.0
+  uuid: traefik-0
   questions:
     - variable: "domain"
       description: "Default domain."
