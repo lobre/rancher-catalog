@@ -1,13 +1,13 @@
 traefik:
   image: traefik
   container_name: traefik
-  command: "--web --docker --docker.domain=${domain} --acme --acme.email=${email} --acme.storagefile=/acme.json --acme.ondemand=true --acme.entrypoint=https"
+  command: "--docker.domain=${domain} --acme.email=${email}"
   ports:
     - "80:80"
     - "443:443"
   volumes:
     - "/var/run/docker.sock:/var/run/docker.sock"
-    - "/dev/null:/traefik.toml"
+    - "$PWD/traefik.toml:/traefik.toml"
     - "$PWD/acme.json:/acme.json"
   labels:
     - "traefik.frontend.rule=Host:${host}"
