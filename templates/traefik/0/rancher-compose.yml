@@ -21,12 +21,3 @@
       required: true
       default: "" 
       type: "string"
-    - variable: "entrypoints"
-      label: "Entrypoints:"
-      description: "Select authorized entrypoints."
-      type: enum   
-      options:
-        - "http,https"
-        - "http"
-      required: true
-      default: "http,https"
