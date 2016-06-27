@@ -1,4 +1,4 @@
-name: Traefik
+name: Proxy
 description: |
   Reverse proxy to manage domain name
 category: System
