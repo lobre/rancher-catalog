@@ -1,4 +1,4 @@
-name: # Name of the Catalog Entry 
+name: Traefik
 description: |
-  # Description of the Catalog Entry
-category: # Category to be used for searching catalog entries
+  Reverse proxy to manage domain name
+category: System
