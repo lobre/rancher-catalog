@@ -6,5 +6,9 @@ traefik:
     - "80:80"
     - "8082:8080"
   volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
-    - /dev/null:/traefik.toml
+    - "/var/run/docker.sock:/var/run/docker.sock"
+    - "/dev/null:/traefik.toml"
+  labels:
+    - "traefik.frontend.rule=Host:${host}"
+    - "traefik.port=8080"
+    - "traefik.enable=true"

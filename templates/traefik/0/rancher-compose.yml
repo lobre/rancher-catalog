@@ -15,8 +15,3 @@
       required: false
       default: "" 
       type: "string"
-
-traefik:
-  scale: 1
-  ports:
-    - "4000:4000"
