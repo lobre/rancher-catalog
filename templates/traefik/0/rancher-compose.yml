@@ -18,5 +18,6 @@
       type: "string"
 
 traefik:
+  scale: 1
   labels:
     traefik.coucou: 'true'
