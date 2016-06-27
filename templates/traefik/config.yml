@@ -1,4 +1,5 @@
 name: Traefik
 description: |
   Automatic reverse proxy
+version: v1
 category: System
